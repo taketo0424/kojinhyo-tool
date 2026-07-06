@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>臨床調査個人票 転記ツール — プライバシーポリシー</title>
+<style>
+  body{font-family:-apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin:2rem auto;padding:0 1.2rem;line-height:1.8;color:#1f2937}
+  h1{font-size:1.5rem;border-bottom:3px solid #0f766e;padding-bottom:.4rem}
+  h2{font-size:1.15rem;margin-top:2rem;color:#0f766e}
+  code{background:#f1f5f9;padding:.1em .4em;border-radius:4px}
+  .box{background:#ecfdf5;border-left:4px solid #0f766e;padding:.8rem 1rem;border-radius:6px}
+  .muted{color:#64748b;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー</h1>
+<p class="muted">対象: Chrome拡張機能「臨床調査個人票 転記ツール」<br>最終更新日: 2026年7月6日</p>
+
+<div class="box">
+<strong>要旨：本拡張機能は、利用者および患者の個人情報を一切収集・保存・外部送信しません。</strong>
+すべての処理は利用者のブラウザ内（ローカル）で完結します。
+</div>
+
+<h2>1. 収集する情報</h2>
+<p>本拡張機能は、開発者・第三者・外部サーバーに対していかなる個人情報も送信・収集しません。具体的には以下のいずれも行いません。</p>
+<ul>
+  <li>患者の氏名・生年月日・住所・保険情報・検査値などの医療情報の外部送信</li>
+  <li>利用者の識別情報、閲覧履歴、利用統計、解析（アナリティクス）の収集</li>
+  <li>クッキー・広告トラッカーの設置</li>
+</ul>
+
+<h2>2. データの処理方法</h2>
+<p>本拡張機能が扱うPDFファイルおよび電子カルテ画面の表示内容は、転記処理のあいだ<strong>利用者のブラウザのメモリ上でのみ</strong>処理されます。生成されたPDFは、利用者が明示的に「ダウンロード」を実行したときにのみ、利用者自身の端末に保存されます。</p>
+<p>疾患ごとの項目対応（マッピング）等の設定情報は、ブラウザの <code>chrome.storage.local</code>（利用者の端末内）にのみ保存され、外部には送信されません。</p>
+
+<h2>3. 通信について</h2>
+<p>本拡張機能はいかなる外部サーバーとも通信しません（<code>connect-src 'self'</code> により拡張機能自身のファイル以外への通信を禁止しています）。文字認識（OCR）等の処理も、拡張機能に同梱されたプログラムにより端末内で実行されます。</p>
+
+<h2>4. 権限の利用目的</h2>
+<ul>
+  <li><code>tabs</code> / <code>scripting</code> / <code>host_permissions (digikar.jp)</code>: 利用者自身が開いている電子カルテ画面から、利用者の操作に応じて患者データを読み取り、様式PDFへ転記するため。読み取った内容は転記のみに使用し、外部送信しません。</li>
+  <li><code>storage</code>: 項目対応などの設定を端末内に保存するため。</li>
+</ul>
+
+<h2>5. 第三者提供</h2>
+<p>収集する情報がないため、第三者への提供・販売はありません。</p>
+
+<h2>6. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、拡張機能の配布元（開発者）までご連絡ください。</p>
+
+<p class="muted">本拡張機能は特定の電子カルテ製品の提供元とは無関係な、独立したツールです。</p>
+</body>
+</html>
